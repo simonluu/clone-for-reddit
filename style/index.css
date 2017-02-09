@@ -1,0 +1,21 @@
+#main-container {
+	overflow: hidden;
+}
+
+.container {
+	width: 100vw;
+	padding-right: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.navItem {
+	color: #9d9d9d;
+	text-decoration: none;
+	user-select: none;
+}
+
+.navItem:hover {
+	color: white;
+	text-decoration: none;
+}
