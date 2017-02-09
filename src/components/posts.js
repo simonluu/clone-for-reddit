@@ -4,7 +4,6 @@ import { Row, Col, Image } from 'react-bootstrap';
 export default class Posts extends Component {
 	renderPosts() {
 		return this.props.posts.map((post) => {
-			console.log(post)
 			return (
 				<Row style={{ paddingTop: '5px', height: '75px', paddingLeft: '15px', paddingRight: '15px' }}>
 					<Col md={1} style={{ width: '70px', padding: '0' }}>
@@ -31,6 +30,8 @@ Posts.propTypes = {
 	posts: PropTypes.array.isRequired
 }
 
+
+			// console.log(post)
 			// <ul>
 			// 	{this.props.posts.map((post, i) =>
 			// 		<li key={i}>{post.title}</li>
