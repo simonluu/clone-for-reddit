@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 
 import { selectSubreddit, fetchPostsIfNeeded, invalidateSubreddit } from '../actions/action';
-import Posts from '../components/Posts';
+import Posts from '../components/posts';
 
 class Subreddit extends Component {
 	constructor(props) {
