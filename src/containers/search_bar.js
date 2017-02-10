@@ -27,7 +27,7 @@ class SearchBar extends Component {
 		this.props.dispatch(selectSubreddit(this.state.term));
 		this.props.dispatch(invalidateSubreddit(this.state.term));
 		this.props.dispatch(fetchPostsIfNeeded(this.state.term));
-		this.context.router.push(`/cloneforreddit/${this.state.term}`);
+		this.context.router.push(`/${this.state.term}`);
 		this.setState({ term: '' });
 	}
 

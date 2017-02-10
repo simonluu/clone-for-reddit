@@ -6,8 +6,8 @@ import App from './components/app';
 import Subreddit from './containers/subreddit';
 
 export default (
-	<Route path="/cloneforreddit" component={App}>
+	<Route path="/" component={App}>
 		<IndexRoute component={Subreddit} />
-		<Route path="/cloneforreddit/:name" component={Subreddit} />
+		<Route path="/:name" component={Subreddit} />
 	</Route>
 );

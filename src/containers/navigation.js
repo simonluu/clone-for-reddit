@@ -21,7 +21,7 @@ class Navigation extends Component {
 				<NavItem>
 					<Link
 						className='navItem'
-						to={`/cloneforreddit/${item.toLowerCase()}`}
+						to={`/${item.toLowerCase()}`}
 						activeStyle={{ color : 'red', textDecoration : 'none' }}
 						onClick={() => {this.handleChange(item)}}>
 						{item}
@@ -43,7 +43,7 @@ class Navigation extends Component {
 				<Navbar inverse collapseOnSelect>
 					<Navbar.Header>
 						<Navbar.Brand>
-							<Link to='/cloneforreddit' onClick={() => {this.handleChange('')}}>Clone for Reddit</Link>
+							<Link to='/' onClick={() => {this.handleChange('')}}>Clone for Reddit</Link>
 						</Navbar.Brand>
 					</Navbar.Header>
 					<Nav style={{ width: '88vw' }}>
